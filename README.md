@@ -1,60 +1,65 @@
 # Ravi Shankar Kumar - Portfolio
 
-A modern, responsive portfolio website showcasing my skills and projects as a Full Stack MERN Developer.
+A modern, responsive portfolio website showcasing my skills and projects as a Full Stack MERN Developer.  
+Built with React.js frontend, Bootstrap 5 styling, and smooth animations for an engaging user experience.
 
-## 🌐 Live Demo
-[View Portfolio](https://your-portfolio-link.vercel.app)
+---
 
-## 🛠️ Built With
-- **Frontend**: React.js, Bootstrap 5
-- **Styling**: CSS3, AOS (Animate On Scroll)
-- **Icons**: React Icons
-- **Deployment**: Vercel
+## Demo Link
 
-## 🚀 Features
-- Responsive design for all devices
-- Modern UI with smooth animations
-- Project showcase with live demos
-- Interactive skills section
-- Contact information and social links
-- Downloadable resume
+[Live Demo](https://ravishankar-dev.vercel.app)  
 
-## 📱 Sections
-- **Hero** - Introduction and social links
-- **About** - Professional summary and education
-- **Projects** - Featured work with live demos
-- **Skills** - Technical skills and tools
-- **Contact** - Get in touch information
+---
 
-## 🎯 Projects Showcased
-- **ResourcePro** - Full-stack resource management platform
-- **AnvayaPro** - React.js analytics dashboard
-- **ShopEasy** - MERN e-commerce platform
+## Quick Start
 
-## 📞 Contact
-- **Email**: ravishankarkumar.work@gmail.com
-- **Phone**: +91 9354419407
-- **LinkedIn**: [ravi-shankar-kumar](https://linkedin.com/in/ravi-shankar-kumar-404215263/)
-- **GitHub**: [RaviShankar-18](https://github.com/RaviShankar-18)
-
-## 🚀 Quick Start
-
-### Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn
-
-### Installation
-```bash
-# Clone the repository
+```
 git clone https://github.com/RaviShankar-18/portfolio.git
-
-# Navigate to project directory
 cd portfolio
-
-# Install dependencies
 npm install
-
-# Start development server
 npm start
+```
 
-Built with ❤️ by Ravi Shankar Kumar
+## Technologies
+- React.js
+- Bootstrap 5
+- CSS3
+- AOS (Animate On Scroll)
+- React Icons
+- Vercel
+
+## Features
+**Hero Section**
+- Professional introduction and overview
+- Social media links and navigation
+- Call-to-action buttons
+
+**About Section**
+- Professional summary and background
+- Education details and qualifications
+- Downloadable resume feature
+
+**Projects Showcase**
+- Featured work with live demos and source code
+- ResourcePro - Full-stack resource management platform
+- AnvayaPro - React.js analytics dashboard
+- ShopEasy - MERN e-commerce platform
+
+**Skills Section**
+- Interactive technical skills display
+- Tools and technologies proficiency
+- Visual skill representation
+
+**Contact Section**
+- Multiple contact methods available
+- Social media integration
+- Professional networking links
+
+**Design Features**
+- Fully responsive design for all devices
+- Modern UI with smooth animations
+- Cross-browser compatibility
+- Fast loading performance
+
+## Contact
+For collaboration opportunities or inquiries, please reach out to ravishankarkumar.work@gmail.com
