@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState, useEffect } from "react";
 import {
   Container,
@@ -9,29 +8,20 @@ import {
   Button,
   Alert,
 } from "react-bootstrap";
-=======
-import React, { useEffect } from "react";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
->>>>>>> cb191b04b708023ca6b391983883a20c64aeab23
 import {
   FaEnvelope,
   FaPhone,
   FaMapMarkerAlt,
   FaGithub,
   FaLinkedin,
-<<<<<<< HEAD
   FaPaperPlane,
   FaDownload,
-=======
-  FaDownload,
   FaExternalLinkAlt,
->>>>>>> cb191b04b708023ca6b391983883a20c64aeab23
 } from "react-icons/fa";
 import AOS from "aos";
 import "./Contact.css";
 
 const Contact = () => {
-<<<<<<< HEAD
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -41,8 +31,6 @@ const Contact = () => {
   const [showAlert, setShowAlert] = useState(false);
   const [alertMessage, setAlertMessage] = useState("");
 
-=======
->>>>>>> cb191b04b708023ca6b391983883a20c64aeab23
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -50,7 +38,6 @@ const Contact = () => {
     });
   }, []);
 
-<<<<<<< HEAD
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -85,38 +72,27 @@ const Contact = () => {
     setTimeout(() => setShowAlert(false), 5000);
   };
 
-=======
->>>>>>> cb191b04b708023ca6b391983883a20c64aeab23
   const contactInfo = [
     {
       icon: <FaEnvelope />,
       title: "Email",
       details: "ravishankarkumar.work@gmail.com",
       link: "mailto:ravishankarkumar.work@gmail.com",
-<<<<<<< HEAD
-=======
       description: "Drop me a line anytime!",
->>>>>>> cb191b04b708023ca6b391983883a20c64aeab23
     },
     {
       icon: <FaPhone />,
       title: "Phone",
       details: "+91 9354419407",
       link: "tel:+919354419407",
-<<<<<<< HEAD
-=======
       description: "Call me for quick discussions",
->>>>>>> cb191b04b708023ca6b391983883a20c64aeab23
     },
     {
       icon: <FaMapMarkerAlt />,
       title: "Location",
       details: "Greater Noida, India",
       link: null,
-<<<<<<< HEAD
-=======
       description: "Available for remote work",
->>>>>>> cb191b04b708023ca6b391983883a20c64aeab23
     },
   ];
 
@@ -126,30 +102,21 @@ const Contact = () => {
       icon: <FaGithub />,
       url: "https://github.com/RaviShankar-18",
       color: "#333",
-<<<<<<< HEAD
-=======
       description: "Check out my code",
->>>>>>> cb191b04b708023ca6b391983883a20c64aeab23
     },
     {
       name: "LinkedIn",
       icon: <FaLinkedin />,
       url: "https://www.linkedin.com/in/ravi-shankar-kumar-404215263/",
       color: "#0077B5",
-<<<<<<< HEAD
-=======
       description: "Let's connect professionally",
->>>>>>> cb191b04b708023ca6b391983883a20c64aeab23
     },
     {
       name: "Email",
       icon: <FaEnvelope />,
       url: "mailto:ravishankarkumar.work@gmail.com",
       color: "#EA4335",
-<<<<<<< HEAD
-=======
       description: "Send me a message",
->>>>>>> cb191b04b708023ca6b391983883a20c64aeab23
     },
   ];
 
@@ -171,7 +138,6 @@ const Contact = () => {
           </Col>
         </Row>
 
-<<<<<<< HEAD
         <Row className="justify-content-center">
           <Col lg={10}>
             <Row>
@@ -199,6 +165,9 @@ const Contact = () => {
                             ) : (
                               <p>{item.details}</p>
                             )}
+                            <small className="text-muted">
+                              {item.description}
+                            </small>
                           </div>
                         </div>
                       ))}
@@ -307,40 +276,11 @@ const Contact = () => {
                 </Card>
               </Col>
             </Row>
-=======
-        {/* Contact Information Cards */}
-        <Row className="justify-content-center mb-5">
-          {contactInfo.map((item, index) => (
-            <Col lg={4} md={6} className="mb-4" key={index}>
-              <Card
-                className="contact-card h-100"
-                data-aos="fade-up"
-                data-aos-delay={index * 100}
-              >
-                <Card.Body className="text-center">
-                  <div
-                    className="contact-icon-large mb-3"
-                    style={{ color: "#3498db" }}
-                  >
-                    {item.icon}
-                  </div>
-                  <h5 className="contact-title">{item.title}</h5>
-                  <p className="contact-description">{item.description}</p>
-                  {item.link ? (
-                    <a href={item.link} className="contact-link-large">
-                      {item.details}
-                    </a>
-                  ) : (
-                    <p className="contact-details-text">{item.details}</p>
-                  )}
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
+          </Col>
         </Row>
 
         {/* Social Links Section */}
-        <Row className="justify-content-center mb-5">
+        <Row className="justify-content-center mt-5 mb-5">
           <Col lg={8}>
             <Card className="social-card" data-aos="fade-up">
               <Card.Body>
@@ -354,15 +294,17 @@ const Contact = () => {
                         rel="noopener noreferrer"
                         className="social-card-link"
                       >
-                        <div className="social-item">
+                        <div className="social-item text-center">
                           <div
-                            className="social-icon-large"
+                            className="social-icon-large mb-2"
                             style={{ color: social.color }}
                           >
                             {social.icon}
                           </div>
                           <h6>{social.name}</h6>
-                          <p>{social.description}</p>
+                          <p className="small text-muted">
+                            {social.description}
+                          </p>
                           <FaExternalLinkAlt className="external-icon" />
                         </div>
                       </a>
@@ -374,37 +316,8 @@ const Contact = () => {
           </Col>
         </Row>
 
-        {/* Resume Download Section */}
-        <Row className="justify-content-center mb-5">
-          <Col lg={6} className="text-center">
-            <Card className="resume-card" data-aos="fade-up">
-              <Card.Body>
-                <h4 className="mb-3">Download My Resume</h4>
-                <p className="mb-4">
-                  Get a detailed overview of my experience, skills, and projects
-                </p>
-                <Button
-                  variant="primary"
-                  href="/resume.pdf"
-                  download="RaviShankarKumar_Resume.pdf"
-                  className="btn-download-large"
-                  size="lg"
-                >
-                  <FaDownload className="me-2" />
-                  Download Resume
-                </Button>
-              </Card.Body>
-            </Card>
->>>>>>> cb191b04b708023ca6b391983883a20c64aeab23
-          </Col>
-        </Row>
-
         {/* Call to Action */}
-<<<<<<< HEAD
-        <Row className="mt-5">
-=======
         <Row>
->>>>>>> cb191b04b708023ca6b391983883a20c64aeab23
           <Col lg={12} className="text-center">
             <Card className="cta-card" data-aos="fade-up">
               <Card.Body>
@@ -414,19 +327,9 @@ const Contact = () => {
                   exciting projects. Let's discuss how we can work together to
                   bring your ideas to life.
                 </p>
-<<<<<<< HEAD
-                <Button
-                  variant="primary"
-                  href="mailto:ravishankarkumar.work@gmail.com"
-                  className="btn-cta"
-                  size="lg"
-                >
-                  Start a Conversation
-                </Button>
-=======
                 <div className="cta-buttons">
                   <Button
-                    variant="light"
+                    variant="primary"
                     href="mailto:ravishankarkumar.work@gmail.com"
                     className="btn-cta me-3 mb-2"
                     size="lg"
@@ -435,7 +338,7 @@ const Contact = () => {
                     Send Email
                   </Button>
                   <Button
-                    variant="outline-light"
+                    variant="outline-primary"
                     href="https://www.linkedin.com/in/ravi-shankar-kumar-404215263/"
                     target="_blank"
                     className="btn-cta-outline mb-2"
@@ -445,7 +348,6 @@ const Contact = () => {
                     Connect on LinkedIn
                   </Button>
                 </div>
->>>>>>> cb191b04b708023ca6b391983883a20c64aeab23
               </Card.Body>
             </Card>
           </Col>

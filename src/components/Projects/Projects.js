@@ -24,10 +24,7 @@ const Projects = () => {
       features: [
         "Job-based dashboards with interactive analytics",
         "Capacity management system with overload alerts",
-<<<<<<< HEAD
         "Resource optimization algorithms",
-=======
->>>>>>> cb191b04b708023ca6b391983883a20c64aeab23
         "Secure authentication with JWT",
         "Real-time project tracking",
       ],
@@ -47,10 +44,7 @@ const Projects = () => {
         "Role-based dashboards using Chart.js",
         "Real-time performance tracking",
         "Comprehensive lead lifecycle management",
-<<<<<<< HEAD
         "Automated status updates",
-=======
->>>>>>> cb191b04b708023ca6b391983883a20c64aeab23
         "Secure authentication system with JWT",
       ],
       liveLink: "https://anvaya-pro.vercel.app/",
@@ -62,11 +56,7 @@ const Projects = () => {
       title: "ShopEasy",
       subtitle: "MERN E-commerce Platform",
       description:
-<<<<<<< HEAD
         "Developed a full-stack MERN e-commerce platform with seamless shopping experience. Features include advanced product search, dynamic filtering, and secure payment integration.",
-=======
-        "Developed a full-stack MERN e-commerce platform with seamless shopping experience. Features include advanced product search, dynamic filtering.",
->>>>>>> cb191b04b708023ca6b391983883a20c64aeab23
       image: "/images/project3-shopeasy.jpg",
       technologies: [
         "MongoDB",
@@ -79,10 +69,7 @@ const Projects = () => {
         "Advanced product search with dynamic filtering",
         "Optimized shopping cart and checkout capabilities",
         "Responsive UI using Bootstrap Grid system",
-<<<<<<< HEAD
         "Secure payment gateway integration",
-=======
->>>>>>> cb191b04b708023ca6b391983883a20c64aeab23
         "Order management functionality",
       ],
       liveLink: "https://shop-easy-app-iota.vercel.app",
