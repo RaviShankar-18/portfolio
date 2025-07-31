@@ -1,4 +1,5 @@
 .footer-section {
+<<<<<<< HEAD
   background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
   color: white;
   padding: 3rem 0 1rem;
@@ -12,6 +13,28 @@
 
 .footer-brand p {
   color: #bdc3c7;
+=======
+  background: #2c3e50;
+  color: white;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-info {
+  margin: 0;
+}
+
+.footer-text {
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.footer-subtitle {
+  color: #bdc3c7;
+  font-size: 0.85rem;
+>>>>>>> cb191b04b708023ca6b391983883a20c64aeab23
   margin: 0;
 }
 
@@ -26,17 +49,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
   width: 45px;
   height: 45px;
   background: rgba(255, 255, 255, 0.1);
   color: white;
   border-radius: 50%;
   font-size: 1.2rem;
+=======
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #bdc3c7;
+  border-radius: 8px;
+  font-size: 1.1rem;
+>>>>>>> cb191b04b708023ca6b391983883a20c64aeab23
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 .social-link:hover {
+<<<<<<< HEAD
   background: rgba(255, 255, 255, 0.2);
   color: white;
   transform: translateY(-3px);
@@ -68,16 +101,34 @@
   color: #95a5a6;
   font-size: 0.9rem;
   margin: 0;
+=======
+  background: var(--secondary-color);
+  color: white;
+  transform: translateY(-2px);
+>>>>>>> cb191b04b708023ca6b391983883a20c64aeab23
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+<<<<<<< HEAD
+=======
+  .footer-section {
+    padding: 1.5rem 0;
+    text-align: center;
+  }
+  
+>>>>>>> cb191b04b708023ca6b391983883a20c64aeab23
   .footer-social {
     justify-content: center;
     margin-top: 1rem;
   }
   
+<<<<<<< HEAD
   .footer-section {
     padding: 2rem 0 1rem;
+=======
+  .footer-info {
+    margin-bottom: 1rem;
+>>>>>>> cb191b04b708023ca6b391983883a20c64aeab23
   }
 }

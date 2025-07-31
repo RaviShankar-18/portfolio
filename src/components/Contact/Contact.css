@@ -28,14 +28,71 @@
   background-color: white;
 }
 
+<<<<<<< HEAD
 .contact-info-card,
 .contact-form-card {
+=======
+/* Contact Cards */
+.contact-card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  background: white;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.contact-icon-large {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.contact-title {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.contact-description {
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.contact-link-large {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-link-large:hover {
+  color: var(--primary-color);
+}
+
+.contact-details-text {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Social Card */
+.social-card {
+>>>>>>> cb191b04b708023ca6b391983883a20c64aeab23
   border: none;
   border-radius: 20px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
   background: white;
 }
 
+<<<<<<< HEAD
 .contact-info-title,
 .contact-form-title {
   color: var(--primary-color);
@@ -176,6 +233,91 @@
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   border: none;
+=======
+.social-card h4 {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.social-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-item {
+  text-align: center;
+  padding: 2rem 1rem;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  position: relative;
+  background: #f8f9fa;
+}
+
+.social-item:hover {
+  background: rgba(52, 152, 219, 0.1);
+  transform: translateY(-5px);
+}
+
+.social-icon-large {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-item h6 {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.social-item p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.external-icon {
+  color: var(--secondary-color);
+  font-size: 0.8rem;
+}
+
+/* Resume Card */
+.resume-card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+.resume-card h4 {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.resume-card p {
+  color: var(--text-light);
+}
+
+.btn-download-large {
+  background: var(--secondary-color);
+  border: none;
+  border-radius: 50px;
+  padding: 1rem 2.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-download-large:hover {
+  background: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+/* CTA Card */
+.cta-card {
+  background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+  backdrop-filter: blur(10px);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.2);
+>>>>>>> cb191b04b708023ca6b391983883a20c64aeab23
   border-radius: 20px;
   padding: 2rem;
 }
@@ -187,7 +329,18 @@
 
 .cta-card p {
   opacity: 0.9;
+<<<<<<< HEAD
   margin-bottom: 1.5rem;
+=======
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+>>>>>>> cb191b04b708023ca6b391983883a20c64aeab23
 }
 
 .btn-cta {
@@ -206,6 +359,7 @@
   transform: translateY(-2px);
 }
 
+<<<<<<< HEAD
 /* Responsive Design */
 @media (max-width: 991px) {
   .contact-info-card {
@@ -226,5 +380,44 @@
   .contact-icon {
     margin-right: 0;
     margin-bottom: 0.5rem;
+=======
+.btn-cta-outline {
+  border: 2px solid white;
+  color: white;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-cta-outline:hover {
+  background: white;
+  color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .social-item {
+    padding: 1.5rem 1rem;
+  }
+  
+  .social-icon-large {
+    font-size: 2rem;
+  }
+  
+  .contact-icon-large {
+    font-size: 2.5rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn-cta, .btn-cta-outline {
+    width: 100%;
+    max-width: 300px;
+>>>>>>> cb191b04b708023ca6b391983883a20c64aeab23
   }
 }
