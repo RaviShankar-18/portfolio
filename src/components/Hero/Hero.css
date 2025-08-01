@@ -3,6 +3,9 @@
   color: white;
   position: relative;
   overflow: hidden;
+  padding-top: 80px; 
+  margin-top: 0;
+  min-height: 100vh;
 }
 
 .hero-section::before {
@@ -47,7 +50,6 @@
 .social-links {
   display: flex;
   gap: 1rem;
-  justify-content: center;
   justify-content: flex-start;
 }
 
@@ -83,7 +85,19 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
+/* Tablet and smaller desktop */
+@media (max-width: 1200px) {
+  .hero-section {
+    padding-top: 70px; /* Reduced from 90px to 70px */
+  }
+}
+
+/* Tablet */
 @media (max-width: 991px) {
+  .hero-section {
+    padding-top: 90px; /* Keep this for tablets */
+  }
+  
   .hero-title {
     font-size: 2.5rem;
   }
@@ -102,7 +116,19 @@
   }
 }
 
+/* Mobile landscape */
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 110px; /* More padding for mobile */
+  }
+}
+
+/* Mobile portrait */
 @media (max-width: 576px) {
+  .hero-section {
+    padding-top: 120px; /* Even more padding for small mobile */
+  }
+  
   .hero-title {
     font-size: 2rem;
   }
@@ -114,5 +140,20 @@
   .profile-img {
     width: 220px;
     height: 220px;
+  }
+}
+
+/* Very small mobile devices */
+@media (max-width: 400px) {
+  .hero-section {
+    padding-top: 130px; /* Maximum padding for very small screens */
+  }
+  
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
   }
 }

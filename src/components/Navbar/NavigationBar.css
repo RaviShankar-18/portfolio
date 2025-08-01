@@ -3,6 +3,11 @@
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
   padding: 1rem 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  min-height: 80px; /* Ensure minimum height */
 }
 
 .custom-navbar.scrolled {
@@ -41,11 +46,31 @@
 }
 
 @media (max-width: 991px) {
+  .custom-navbar {
+    padding: 0.8rem 0; /* Slightly less padding on mobile */
+    min-height: 70px;
+  }
+  
   .navbar-collapse {
     background-color: white;
     margin-top: 1rem;
     border-radius: 10px;
     padding: 1rem;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-navbar {
+    min-height: 60px;
+    padding: 0.6rem 0;
+  }
+  
+  .navbar-brand {
+    font-size: 1.3rem !important;
   }
 }
