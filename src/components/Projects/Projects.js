@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import { Container, Row, Col, Card, Button, Badge } from "react-bootstrap";
-import { FaGithub, FaExternalLinkAlt, FaEye } from "react-icons/fa";
+import { Container, Row, Col, Card, Badge } from "react-bootstrap";
+import { FaGithub, FaEye } from "react-icons/fa";
 import AOS from "aos";
 import "./Projects.css";
 
@@ -19,7 +19,7 @@ const Projects = () => {
       subtitle: "Full-Stack Resource Management Platform",
       description:
         "Built a full-stack application for managing engineering teams, projects, and resources with real-time updates. Features comprehensive analytics for managers and engineers.",
-      image: "/images/project1-resourcepro.jpg", // Add your project images
+      image: "/images/project1-resourcepro.jpg",
       technologies: ["React.js", "Node.js", "MongoDB", "Express.js", "JWT"],
       features: [
         "Job-based dashboards with interactive analytics",
@@ -30,7 +30,6 @@ const Projects = () => {
       ],
       liveLink: "https://resource-pro.vercel.app/",
       githubLink: "https://github.com/RaviShankar-18/resource-pro",
-      status: "Completed",
     },
     {
       id: 2,
@@ -49,7 +48,6 @@ const Projects = () => {
       ],
       liveLink: "https://anvaya-pro.vercel.app/",
       githubLink: "https://github.com/RaviShankar-18/anvaya-pro",
-      status: "Completed",
     },
     {
       id: 3,
@@ -74,7 +72,6 @@ const Projects = () => {
       ],
       liveLink: "https://shop-easy-app-iota.vercel.app",
       githubLink: "https://github.com/RaviShankar-18/shop-easy-app",
-      status: "Completed",
     },
   ];
 
@@ -99,7 +96,7 @@ const Projects = () => {
 
         <Row>
           {projects.map((project, index) => (
-            <Col lg={12} key={project.id} className="mb-5">
+            <Col lg={12} key={project.id} className="mb-4">
               <Card
                 className={`project-card ${
                   index % 2 === 0 ? "project-left" : "project-right"
@@ -107,7 +104,7 @@ const Projects = () => {
                 data-aos="fade-up"
                 data-aos-delay={index * 200}
               >
-                <Row className="g-0">
+                <Row className="g-0 align-items-center">
                   <Col
                     md={6}
                     className={index % 2 === 0 ? "order-1" : "order-2"}
@@ -147,9 +144,6 @@ const Projects = () => {
                   >
                     <Card.Body className="project-content">
                       <div className="project-header">
-                        <Badge bg="primary" className="project-status mb-2">
-                          {project.status}
-                        </Badge>
                         <h3 className="project-title">{project.title}</h3>
                         <h5 className="project-subtitle">{project.subtitle}</h5>
                       </div>
@@ -167,33 +161,12 @@ const Projects = () => {
                         </ul>
                       </div>
 
-                      <div className="project-tech mb-3">
+                      <div className="project-tech">
                         {project.technologies.map((tech, idx) => (
                           <Badge key={idx} bg="secondary" className="me-2 mb-1">
                             {tech}
                           </Badge>
                         ))}
-                      </div>
-
-                      <div className="project-buttons">
-                        <Button
-                          variant="primary"
-                          href={project.liveLink}
-                          target="_blank"
-                          className="me-2 mb-2"
-                        >
-                          <FaExternalLinkAlt className="me-2" />
-                          Live Demo
-                        </Button>
-                        <Button
-                          variant="outline-dark"
-                          href={project.githubLink}
-                          target="_blank"
-                          className="mb-2"
-                        >
-                          <FaGithub className="me-2" />
-                          View Code
-                        </Button>
                       </div>
                     </Card.Body>
                   </Col>

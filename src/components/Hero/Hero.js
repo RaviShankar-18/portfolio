@@ -29,11 +29,10 @@ const Hero = () => {
           <Col lg={6} className="text-center text-lg-start">
             <div data-aos="fade-up" data-aos-delay="100">
               <h1 className="hero-title mb-3">
-                Hi, I'm <span className="text-primary">Ravi Shankar Kumar</span>
+                Hi, I'm <span className="text-custom">Ravi Shankar Kumar</span>
               </h1>
               <h2 className="hero-subtitle mb-4">
-                Full Stack <span className="text-secondary">MERN</span>{" "}
-                Developer
+                Full Stack <span className="text-custom">MERN</span> Developer
               </h2>
               <p className="hero-description mb-4">
                 Passionate software developer with expertise in creating
